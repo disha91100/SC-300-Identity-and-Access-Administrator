@@ -206,7 +206,7 @@ Once you have finalized your terms of use document, use the following procedure 
  
 ### Task 3: Review the report of acceptance and rejection records
 
-The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
+The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use. Please go back to the browser window where you are logged in with the odl user. 
 
 1. In Microsoft Azure portal, navigate to **Microsoft Entra ID** and select **Identity Governance**  and subsequently select **Terms of use** and locate the terms of use that was newly created.
   
