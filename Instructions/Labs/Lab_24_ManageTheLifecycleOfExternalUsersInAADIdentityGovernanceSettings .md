@@ -20,6 +20,8 @@ In this lab you will be performing the following task:
 
 #### Task 1 - Manage the lifecycle of external users in Azure AD Identity Governance settings
 
+In this task, you will configure Azure AD Identity Governance settings to manage the lifecycle of external users. You'll adjust policies to block external users from signing in or remove their guest accounts when they lose access to resources, ensuring proper governance and security of your Azure environment.
+
 1. In the Azure Portal, in **Search resources, services and docs** type **Microsoft Entra ID** and select it.
 
 2. From the left navigation pane, choose **Identity Governance (2)** under the **Manage (1)** section.
