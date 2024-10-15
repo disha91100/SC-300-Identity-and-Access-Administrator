@@ -154,35 +154,35 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
     >**Verification** - Based on our current lab environment configuration, you will be required configure MFA and log in successfully.
     
-    > 1. If **Action required** pop-up window appears, click on **Next**.
+     - If **Action required** pop-up window appears, click on **Next**.
 
-    > 1. On **Start by getting the app** page, click on **Next**.
+     - On **Start by getting the app** page, click on **Next**.
       
-    > 1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
+     - In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
 
-    >    ![Install](../images/authapp.png)
+         ![Install](./media/authapp.png)
 
-         >**Note*:For **iOS**, Open app store and repeat the steps.
+         >**Note**: For **iOS**, Open app store and repeat the steps.
 
          >**Note**: Skip If already installed.
    
-   > 1. Open the app and click on **Scan a QR code**.
+     - Open the app and click on **Scan a QR code**.
 
-   > 1. Scan the QR code visible on the screen and click on **Next**.
+     - Scan the QR code visible on the screen and click on **Next**.
 
-   >    ![QR code](../images/qrcode.png)
+        ![QR code](./media/qrcode.png)
    
-   >  1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
+     - Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
 
-   >  1. Once the notification is approved, click on **Next**.
+     - Once the notification is approved, click on **Next**.
 
-   >   ![Approved](../images/notification.png)
+        ![Approved](./media/notification.png)
 
-  >  1. Click on **Done**.
+     - Click on **Done**.
   
-  >  1. If prompted to stay signed in, you can click **"No"**.
+     - If prompted to stay signed in, you can click **"No"**.
 
-  >  1. Tap on **Finish** in the Mobile Device.
+     - Tap on **Finish** in the Mobile Device.
 
        >**NOTE**: While logging in again , enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
