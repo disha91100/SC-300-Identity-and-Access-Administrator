@@ -41,13 +41,17 @@ In this lab, you will complete the following tasks:
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Conditional Access**. A new tab will open for **Conditional Access**.
+1. To improve one area of the identity security posture, select **Enable Microsoft Entra ID Identity Protection sign-in risk policies**.
 
-   **Note** - By default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either will work.
+2. In the tile that opens, scroll down and select **Get Started**.
 
-2. Select **+ Create new policy** from **Conditional Access | Overview** page.
+3. A new tab will open for **Identity Protection**. Select **Conditional Access** under Protect from the left tab.
 
-3. Give your policy a name as **Accesspolicy-<inject key="DeploymentID"></inject>**. We recommend that organizations create a meaningful standard for the names of their policies.
+ **Note** - By default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either will work.
+
+4. Select **+ New policy**.
+
+3. Give your policy a name as **Accesspolicy-<inject key="DeploymentID" enableCopy="false"/>**. We recommend that organizations create a meaningful standard for the names of their policies.
 
 4. Under **Assignments|Users**, select **0 users and groups selected**. Under Include, select **All users**.
 
