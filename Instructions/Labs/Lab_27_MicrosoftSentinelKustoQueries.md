@@ -18,10 +18,10 @@ In this lab, you will be performing the following tasks:
 
 #### Estimated time: 60 minutes
 
-### Exercise 1 - Configure Microsoft Sentinel for Kusto Queries
+## Exercise 1 - Configure Microsoft Sentinel for Kusto Queries
 Configuring Microsoft Sentinel for Kusto Queries enables advanced log and security data analysis within the Azure Sentinel platform, enhancing threat detection and response capabilities.
 
-#### Task 1 - Create a Microsoft Sentinel workspace
+### Task 1 - Create a Microsoft Sentinel workspace
 
 1. In **Search resources, services, and docs** search and select for **Microsoft Sentinel**. 
 
@@ -48,7 +48,7 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
 
    <validation step="4e426e86-3c79-41e6-b8e8-1c53996176e3" />
 
-#### Task 2 - Add Microsoft Entra ID as a Data source
+### Task 2 - Add Microsoft Entra ID as a Data source
 
 1. In **Microsoft Sentinel**, from the left-hand navigate menu under the **Configuration** section, select **Data connectors**.
 
@@ -75,11 +75,11 @@ Configuring Microsoft Sentinel for Kusto Queries enables advanced log and securi
 
    ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](./media/lab27-2.png)
 
-   **Note** - The Microsoft Entra ID data connector may take a few minutes to show in the active count.
+    > **Note** - The Microsoft Entra ID data connector may take a few minutes to show in the active count.
 
-   **Note** - If the Connected count isn't displayed after a few minutes, try deleting the connector and then adding it again.
+    > **Note** - If the Connected count isn't displayed after a few minutes, try deleting the connector and then adding it again.
 
-#### Task 3 - Run Kusto query on User activity
+### Task 3 - Run Kusto query on User activity
 
 1. In **Microsoft Sentinel** page, from the left-hand navigation page select **Logs** under the **General** menu section.
 
