@@ -40,7 +40,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 3. Open select **Identity Governance** in the lefthand navigation menu.
    
-4. In the menu, under **Entitlement management**.
+4. In the menu under, select **Entitlement management**.
    
    ![image](https://github.com/user-attachments/assets/e9b1a337-8c1d-4d58-ad5f-8ca2c9dadb04)
 
@@ -251,7 +251,7 @@ Users can review and see the terms of use that they have accepted by using the f
 
 4. On the Settings & Privacy page, select the **Privacy** tab.
 
-    ![](./media/settings-privacy-2.png)
+    ![](./media/settings-privacy3.png)
 
 5. Under **Organization’s notice**, you can review the terms of use you have accepted.
 
@@ -269,7 +269,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 3. Open select **Identity Governance** in the lefthand navigation menu.
    
-4. In the menu, under **Entitlement management**.
+4. In the menu under, select **Entitlement management**.
    
    ![image](https://github.com/user-attachments/assets/e9b1a337-8c1d-4d58-ad5f-8ca2c9dadb04)
 
