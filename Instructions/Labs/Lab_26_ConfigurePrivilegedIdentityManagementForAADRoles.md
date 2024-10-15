@@ -160,7 +160,7 @@ When you need to assume an Azure AD role, you can request activation by opening 
       
     > 1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
 
-    >    ![Install](../images/mobile.jpg)
+    >    ![Install](../images/authapp.png)
 
          >**Note*:For **iOS**, Open app store and repeat the steps.
 
@@ -170,13 +170,13 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
    > 1. Scan the QR code visible on the screen and click on **Next**.
 
-   >    ![QR code](../images/demo001.png)
+   >    ![QR code](../images/qrcode.png)
    
    >  1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
 
    >  1. Once the notification is approved, click on **Next**.
 
-   >   ![Approved](../images/demo002.png)
+   >   ![Approved](../images/notification.png)
 
   >  1. Click on **Done**.
   
