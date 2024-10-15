@@ -22,6 +22,8 @@ In this lab, you will complete the following tasks:
 
 #### Task 1 - Review Identity Secure Score and improvement actions
 
+In this task, you will review the Identity Secure Score in Microsoft Entra and explore the improvement actions that enhance your organization's identity security posture. You'll navigate the dashboard to assess focused actions for boosting your overall tenant security.
+
 1. Open a new tab, and sign in to the [https://entra.microsoft.com/](https://entra.microsoft.com/).
 
 2. Sign in using below credentials :
@@ -44,6 +46,8 @@ In this lab, you will complete the following tasks:
 6. In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft Defender XDR, these improvement actions are specific to identity. This provides a more focused list of potential actions to your security posture management. Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture.
 
 #### Task 2 - Execute an improvement action
+
+In this task, you will execute an improvement action by enabling Microsoft Entra ID Identity Protection sign-in risk policies. You'll create a new conditional access policy to strengthen identity security, configuring users, resources, and access controls.
 
 1. To improve one area of the identity security posture, select **Enable Microsoft Entra ID Identity Protection sign-in risk policies (1)**.
 
