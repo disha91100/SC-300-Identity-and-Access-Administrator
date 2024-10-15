@@ -24,25 +24,25 @@ In this exercise, you will learn how to customize role settings by configuring M
 
 ### Task 1 - Open role settings
 
-Follow these steps to open the settings for an Azure AD role.
+In this task ,you will access and review the settings for the Compliance Administrator role in Azure AD Privileged Identity Management.
 
-2. In the Azure portal, search for and  select **Microsoft Entra ID Privileged Identity Management.**
+1. In the Azure portal, search for and  select **Microsoft Entra ID Privileged Identity Management.**
 
-3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra ID roles** under **Manage** option.
+1. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra ID roles** under **Manage** option.
 
-4. On the Quick start page, in the left navigation, select **Settings (1)** under **Manage** option.
+1. On the Quick start page, in the left navigation, select **Settings (1)** under **Manage** option.
   
-5. Review the list of roles and then, in the **Search by role name (2)**, enter **compliance**.
+1. Review the list of roles and then, in the **Search by role name (2)**, enter **compliance**.
    
    ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](./media/set2.png)
 
-6. In the results, select **Compliance Administrator**.
+1. In the results, select **Compliance Administrator**.
 
-7. Review the role setting details information.
+1. Review the role setting details information.
 
 ### Task 2 - Require approval to activate
 
-If setting multiple approvers, approval completes as soon as one of them approves or denies. You cannot require approval from at least two users. To require approval to activate a role, follow these steps.
+In this task, you will configure the Compliance Administrator role to require approval for activation by enabling the approval setting, selecting the approvers, and saving the changes.
 
 1. In the Role setting details page, on the top menu, select **Edit**.
 
@@ -108,9 +108,14 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 ### Task 2 - Log in with Miriam
 
+In this task, you will log in to the Azure Portal as Miriam Graham, reset her password if needed, and check that she has the Compliance Administrator role assigned.
+
 1. Open a new InPrivate browser window.
+
 2. Connect to the Azure Portal (https://portal.azure.com).
+
 3. If it opens with a user logged in, Select on their name in the upper-right corner and select **Sign in as a different account**.
+
 4. Log in a Miriam.
 
    | Field | Value |
@@ -120,17 +125,21 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
    >**Note:** To find the username for Miriam Graham, login to the Azure portal and navigate to the Users section of the Microsoft Entra ID, and copy the user name.
 
-   >**Note:** From the Microsoft Entra ID **Users** section, click on **Miriam Graham** user and from the top navigation pane, click on **Reset Password** and subsequently click on **Reset Password**  again and copy the temporary password and login to office.com and reset the password to **Pa55w.rd@123**
+   >**Note:** From the Microsoft Entra ID **Users** section, click on **Miriam Graham** user and from the top navigation pane, click on **Reset Password** and subsequently click on **Reset Password**  again and copy the temporary password and login to Azure portal and reset the password to **Pa55w.rd@123**
 
 5. Close the **Welcome to Microsoft Azure dialog**.
+
 6. From the **Search resource, services, and docs** bar look for Microsoft Entra ID, and open the page.
+
 7. On the **Overview** page, look for the **My feed**.
+
 8. Select **View Profile** under Miriam Graham's name; this with open Miriam's profile page.
 
    ![Screen image displaying the select a member pane with a selected member highlighted](./media/miriam.png)
 
-10. From the left navigation pane,under Manage select **Assigned roles** then select **Eligible assignments**.
-11. Notice that the **Compliance Administrator** role is now available to Miriam.
+9. From the left navigation pane,under Manage select **Assigned roles** then select **Eligible assignments**.
+
+10. Notice that the **Compliance Administrator** role is now available to Miriam.
 
 ### Task 3 - Activate your Microsoft Entra ID roles
 
@@ -158,7 +167,7 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
      - On **Start by getting the app** page, click on **Next**.
       
-     - In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
+     - In **Android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
 
          ![Install](./media/authapp.png)
 
