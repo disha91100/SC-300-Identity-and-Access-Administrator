@@ -17,33 +17,23 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Estimated time: 30 minutes
 
-### Exercise 1 - Admin Consent
-
-Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
-
 #### Task 1 - App registration
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account. The odl user account provided in the Environment will be having Global administrator role assigned. 
 
 2. Open the portal menu and then select **Identity**.
 
-3. On the Identity menu, under **Applications**, select **App registrations**.
+3. On the Identity menu, under **Applications (1)**, select **App registrations (2)** and click on **+ New registration (3)**.
 
-4. In the App registrations pane, select **+ New registrations**.
+   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/app-reg.png)
 
-   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/entraid2.png)
-
-5. On the **Microsoft Entra ID** blade, under **Manage**, select **App registrations.**
-
-6. On the **App registrations** page, on the menu, select **+ New registration**.
-
-7. On the **Register an application** blade, register an app named **Demo app (1)** using the default values. You do not need to enter the redirect URI and click on **Register (2)**.
+4. On the **Register an application** blade, register an app named **Demo app (1)** using the default values. You do not need to enter the redirect URI and click on **Register (2)**.
 
     ![Screen image displaying the Register an application blade with the name and default settings highlighted](./media/demoapp3.png)
 
-8. When complete, you will be directed to the **Demo app** blade.
+5. When complete, you will be directed to the **Demo app** blade.
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -81,11 +71,9 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 
 1. In Microsoft Entra admin center, browse to **Identity > Applications > Enterprise applications > Demo app.**
 
-2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
+2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.** Under **Permissions,** select **Grant admin consent.**
 
-3. Under **Permissions,** select **Grant admin consent.**
-
-    ![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](./media/perm121.png)
+    ![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](./media/T3S2.png)
 
    >**Warning** - Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
