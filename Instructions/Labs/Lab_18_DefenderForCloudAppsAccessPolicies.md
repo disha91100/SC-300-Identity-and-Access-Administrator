@@ -194,7 +194,6 @@ Registering your application establishes a trust relationship between your app a
    >**Note:** Please logout and login for the logs to appear.
 
 ### Review
-
 In this lab, you have completed the following exercises:
 - Created and tested the Conditional Access App Control policy
 - Setup alerts in Microsoft Defender for Cloud Apps
