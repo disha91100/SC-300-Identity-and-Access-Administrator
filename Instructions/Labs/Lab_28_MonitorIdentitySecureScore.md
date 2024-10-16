@@ -22,6 +22,8 @@ In this lab, you will complete the following tasks:
 
 #### Task 1 - Review Identity Secure Score and improvement actions
 
+In this task, you will review the Identity Secure Score in Microsoft Entra and explore the improvement actions that enhance your organization's identity security posture. You'll navigate the dashboard to assess focused actions for boosting your overall tenant security.
+
 1. Open a new tab, and sign in to the [https://entra.microsoft.com/](https://entra.microsoft.com/).
 
 2. Sign in using below credentials :
@@ -31,37 +33,61 @@ In this lab, you will complete the following tasks:
    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
 
-3. From the left-hand navigation pane, select **Protection > Identity Secure Score** to view the dashboard.
+3. From the left-hand navigation pane, select **Protection (1) > Identity Secure Score (2)** to view the dashboard.
 
 4. Select **Identity Secure Score**. This will take you to the Identity Secure Score dashboard.
 
+   ![](./media/new-lab28-1.png)
+
 5. Scroll down to view the **Improvement actions**.
+
+   ![](./media/new-lab28-2.png)
 
 6. In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft Defender XDR, these improvement actions are specific to identity. This provides a more focused list of potential actions to your security posture management. Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture.
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Conditional Access**. A new tab will open for **Conditional Access**.
+In this task, you will execute an improvement action by enabling Microsoft Entra ID Identity Protection sign-in risk policies. You'll create a new conditional access policy to strengthen identity security, configuring users, resources, and access controls.
 
-   **Note** - By default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either will work.
+1. To improve one area of the identity security posture, select **Enable Microsoft Entra ID Identity Protection sign-in risk policies (1)**.
 
-2. Select **+ Create new policy** from **Conditional Access | Overview** page.
+1. In the tile that opens, scroll down and select **Get Started (2)**.
 
-3. Give your policy a name as **Accesspolicy-<inject key="DeploymentID"></inject>**. We recommend that organizations create a meaningful standard for the names of their policies.
+   ![](./media/new-lab28-3.png)
 
-4. Under **Assignments|Users**, select **0 users and groups selected**. Under Include, select **All users**.
+1. A new tab will open for **Identity Protection**. Select **Conditional Access** under Protect from the left tab.
 
-5. Under Exclude, select **Users and groups** and choose any accounts that must maintain the ability to use legacy authentication. Microsoft recommends you exclude at least one account to prevent yourself from being locked out. For now select **Spektra Systems** and **ODL_User <inject key="DeploymentID"></inject>**.
+   ![](./media/new-lab28-4.png)
 
-6. Under Target resources, select **No target resources selected** > **Cloud apps** > under **Include**, select **All cloud apps**.
+   **Note**: By default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either will work.
 
-7. Under Conditions select **0 conditions selected** > under **Client apps** select **Not configured**, set **Configure** to **Yes**. Check only the boxes **Exchange ActiveSync clients** and **Other clients**. Select Done.
+1. Select **+ New policy**.
 
-8. Under Access controls|Grant select **0 controls selected**, select Block access. Choose Select.
+1. Give your policy a name as **Accesspolicy-<inject key="DeploymentID" enableCopy="false"/> (1)**. We recommend that organizations create a meaningful standard for the names of their policies.
 
-9. Confirm your settings and set Enable policy to **Report-only**.
+1. Under **Assignments|Users**, select **0 users and groups selected (2)**. Under **Include (3)**, select **All users (4)**.
 
-10. Select **Create** to create to enable your policy.
+   ![](./media/new-lab28-5.png)
+
+1. Under **Exclude (1)**, select **Users and groups (2)** and choose any accounts that must maintain the ability to use legacy authentication. Microsoft recommends you exclude at least one account to prevent yourself from being locked out. For now select **Spektra Systems** and **ODL_User <inject key="DeploymentID"></inject> (3)** and then click **Select (4)**.
+
+   ![](./media/new-lab28-6.png)
+
+1. Under Target resources, select **No target resources selected (1)** > **Cloud apps (2)** > under **Include (3)**, select **All cloud apps (4)**.
+
+   ![](./media/new-lab28-7.png)
+
+1. Under Conditions select **0 conditions selected (1)** > under **Client apps** select **Not configured (2)**, set **Configure** to **Yes (3)**. Check only the boxes **Exchange ActiveSync clients** and **Other clients (4)**. Select **Done (5)**.
+
+   ![](./media/new-lab28-9.png)
+
+1. Under Access controls|Grant select **0 controls selected (1)**, select **Block access (2)**. Choose **Select (3)**.
+
+1. Confirm your settings and set Enable policy to **Report-only (4)**.
+
+1. Select **Create (5)** to create to enable your policy.
+
+   ![](./media/new-lab28-10.png)
 
 ### Review
 In this lab, you have completed:
