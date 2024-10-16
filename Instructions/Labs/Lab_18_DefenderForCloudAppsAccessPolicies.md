@@ -142,9 +142,9 @@ Registering your application establishes a trust relationship between your app a
 
 1. Leave the **Category** as **Access control**.
 
-1. Under **Activities matching all of the following**, select the drop-down for **Intune compliant, Hybrid Azure AD joined** and unselect **Hybrid Azure AD joined**.
+1. Under **Activities matching all of the following**, select the drop-down for **Intune compliant, Microsoft Entra Hybrid joined** and unselect **Microsoft Entra Hybrid joined**.
 
-   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/365defender.png)
+   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/new-lab18-1.png)
 
 1. Select the drop-down for **Select apps**, select **Microsoft Forms**.
 
