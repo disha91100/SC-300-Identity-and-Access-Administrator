@@ -140,9 +140,9 @@ You should test your conditional access policies to ensure they working as expec
 
    ![](./media/lab13-ms-entra-id-12.png)
 
-3. If you are signed in, close the tab, wait 1 minute, and then retry.
+3. If you are signed in, close the tab, wait for about a minute, and then retry.
     
-   **Note** - If your are auto-logged into Sway as the user, then you will need to manually log out. Your credentials/access were cached. Once you log out and sign-in, your Sway should deny access.
+   >**Note** - If you are auto-logged into Sway as the user, then you will need to manually log out. Your credentials/access were cached. Once you log out and sign-in, your Sway should deny access as per the conditional policy assigned.
 
 4. Close the tab and return to the Conditional Access page that displays the list of available policies.
 
@@ -186,7 +186,6 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
       ![image](https://github.com/user-attachments/assets/b53a235a-d8d9-46ba-9761-2f6e39324771)
 
-
 15. Select **What if** present at the bottom of the page. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
     ![](./media/lab13-ms-entra-id-19.png)
@@ -199,13 +198,14 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 ### Task 1: Use the Microsoft Admin center to configure conditional access
 
-As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency.
+As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign-in frequency.
 
 1. In the Entra ID page,in the **Conditional Access** window,on the **Overview** page, click **+ Create new policy**.
 
     ![](./media/lab13-ms-entra-id-4.png)
 
 2. Within the new policy page, configure the following:
+    
     - In the **Name** box, enter **Sign in frequency (1)**.    
     - Under **Assignments**, click on **Users (2)**.
     - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
@@ -213,20 +213,22 @@ As part of your company's larger security configuration, you must test a conditi
     - Under **Select**, click on **0 users and groups selected (5)** to add the new user who would be alligned to this conditional access policy.
     - In the Select pane, select **ODL_user <inject key="DeploymentId" enableCopy="false" /> (6)** account and then click on **Select (7)**.
 
-    ![](./media/lab13-ms-entra-id-21.png)
+       ![](./media/lab13-ms-entra-id-21.png)
    
-    ![](./media/lab13-ms-entra-id-22.png)
+       ![](./media/lab13-ms-entra-id-22.png)
 
 3. In order to implement sign in reauthentication frequency to a specific app for the user, execute the following configurations while creating the conditional access policy:
+    
     - Under the **Target resources** section, click on **No target resources selected (1)**.
     - Ensure to have **Cloud apps (2)** option selected from the dropdown list.
     - Within the **Include** tab, choose the **Select apps (3)** radio button.
     - Click on **Select (4)** which opens the Select pane.
     - In the Select pane, search for and select **Sway (5)** and then click on **Select (6)**.
 
-    ![image](https://github.com/user-attachments/assets/5e58ea8e-5b18-425a-b2e0-31f39351767c)
+      ![image](https://github.com/user-attachments/assets/5e58ea8e-5b18-425a-b2e0-31f39351767c)
 
 4. To set control access based on session controls to enable limited experiences within specific cloud applications, perform the following:
+    
     - Under **Access controls**, select **Session (1)**.
     - In the Session pane, select the **Sign-in frequency (2)** checkbox.
     - In the value box, enter **30 (3)**.
