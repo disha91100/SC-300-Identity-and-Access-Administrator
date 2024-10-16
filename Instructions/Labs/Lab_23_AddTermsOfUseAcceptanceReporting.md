@@ -40,7 +40,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 3. Open select **Identity Governance** in the lefthand navigation menu.
    
-4. In the menu, under **Entitlement management**.
+4. In the menu under, select **Entitlement management**.
    
    ![image](https://github.com/user-attachments/assets/e9b1a337-8c1d-4d58-ad5f-8ca2c9dadb04)
 
@@ -206,7 +206,7 @@ Once you have finalized your terms of use document, use the following procedure 
  
 ### Task 3: Review the report of acceptance and rejection records
 
-The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
+The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use. Please go back to the browser window where you are logged in with the odl user. 
 
 1. In Microsoft Azure portal, navigate to **Microsoft Entra ID** and select **Identity Governance**  and subsequently select **Terms of use** and locate the terms of use that was newly created.
   
@@ -251,7 +251,7 @@ Users can review and see the terms of use that they have accepted by using the f
 
 4. On the Settings & Privacy page, select the **Privacy** tab.
 
-    ![](./media/settings-privacy-2.png)
+    ![](./media/settings-privacy3.png)
 
 5. Under **Organization’s notice**, you can review the terms of use you have accepted.
 
@@ -269,7 +269,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 3. Open select **Identity Governance** in the lefthand navigation menu.
    
-4. In the menu, under **Entitlement management**.
+4. In the menu under, select **Entitlement management**.
    
    ![image](https://github.com/user-attachments/assets/e9b1a337-8c1d-4d58-ad5f-8ca2c9dadb04)
 

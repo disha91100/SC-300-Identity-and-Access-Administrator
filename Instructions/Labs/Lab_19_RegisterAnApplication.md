@@ -13,7 +13,7 @@ In this lab, you will complete the following tasks:
 
 ## Estimated time: 30 minutes
 
-## Exercise 1 - Register an application
+## Execise 1 : Register an application
 
 ### Task 1 - App registration
 
@@ -67,9 +67,9 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 >**Note**: The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
-1. From the left-hand navigation pane, select **Certificates & secrets**, then select **+ New client secret**.
+1. From the left-hand navigation pane, select **Certificates & secrets (1)**, then select **+ New client secret (2)**.
 
-    ![Screenshot of Azure portal showing the Certificates and secrets pane in app registration](./media/portal-05-app-reg-04-credentials.png)
+    ![Screenshot of Azure portal showing the Certificates and secrets pane in app registration](./media/L19T3S1.png)
 
 1. Under **Description**, add a description for your client secret.
 
