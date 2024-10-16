@@ -20,9 +20,12 @@ In this lab, you will complete the following tasks:
    ![](./media/arch16.png)
 
 ## Exercise 1 - Use Azure Key Vault to manage Virtual Machine identities
+
 Use Azure Key Vault to securely manage and rotate secrets, keys, and certificates for Virtual Machine identities in Azure, enhancing security and access control.
 
 ### Task 1 - Create a Windows Virtual Machine
+
+In this task, you will create a Windows 11 VM from the Azure Marketplace, configure essential settings like name and credentials, and enable managed identity before deploying the VM.
 
 1. Select **+ Create a resource**.
 
@@ -73,6 +76,8 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 ### Task 2 - Create a Key Vault
 
+In this task, you will create an Azure Key Vault by configuring the required settings, including the name and access policy, then deploy it and retrieve the Key Vault URL for future tasks.
+
 1. Select **+ Create a resource**.
 
     ![](./media/lab16-1.png)
@@ -115,9 +120,11 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 ### Task 3 - Create a secret
 
+In this task, you will create a secret in your Key Vault by specifying the name and value, then copy the secret name for use in future tasks.
+
 1. Navigate to your newly created Key Vault.
 
-1. From the left-hand navigation pane, under **Objects**, select **Secrets** and click on  **+ Generate/Import**.
+1. From the left-hand navigation pane, under **Objects**, select **Secrets** and click on **+ Generate/Import**.
 
    ![](./media/lab16-7.png)
    
@@ -143,6 +150,8 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 ### Task 4 - Grant access to Key Vault
 
+In this task, you will grant access to your Key Vault by creating an access policy, assigning secret management permissions, and selecting the appropriate VM as the principal.
+
 1. On the **keyvault-<inject key="DeploymentID" enableCopy="false"/> | Secrets**, from the left-hand navigation pane, select **Access policies** and click on **+ Create**.
    ![](./media/lab16-8.png)
 
@@ -158,6 +167,8 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 1. On the **Review + Create** page, select **Create**.
 
 ### Task 5 - Access data with Key Vault secret with PowerShell
+
+In this task, you will use PowerShell within your virtual machine to access the secret stored in Azure Key Vault by obtaining an access token and invoking a web request to retrieve the secret.
 
 1. In **Search, resources, services and docs** search and select **Virtual machines**.
 
