@@ -23,6 +23,8 @@ After completing this lab, you will be able to complete the following exercises:
 
 ### Task 1 - Confirm that PradeepG has unconditional access to FORMS
 
+In this task, you will confirm that Pradeep Gupta has unconditional access to Microsoft Forms by logging in through an InPrivate browsing window and verifying that the application opens without any warning messages. You will also manage Pradeep's credentials in the Azure portal if necessary.
+
 1. Open a Microsoft Edge browser, launch a new **InPrivate** browsing window, and browse to [https://forms.microsoft.com](https://forms.microsoft.com).
 
    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/signin.png)
@@ -57,6 +59,8 @@ After completing this lab, you will be able to complete the following exercises:
 9. Close the InPrivate browsing window.
 
 ### Task 2 - Configure Microsoft Entra ID to work with Defender for Cloud Apps
+
+In this task, you will configure Microsoft Entra ID to work with Defender for Cloud Apps by creating a Conditional Access policy to monitor Pradeep's usage of Microsoft Forms. You will also disable security defaults to enable the new policy and finalize the configuration.
 
 1. Navigate to Azure Portal, in **Search resources, services and docs (1)** search and select for **Microsoft Entra ID (2)**.
 
@@ -99,6 +103,8 @@ After completing this lab, you will be able to complete the following exercises:
 
 ### Task 3 - Log into Forms and validate that conditional access is monitoring
 
+In this task, you will log into Microsoft Forms as Pradeep Gupta in an InPrivate browsing window to validate that the conditional access policy is monitoring access.
+
 1. Launch a new InPrivate browsing window and browse to [https://forms.microsoft.com](https://forms.microsoft.com).
 
 2. Select **Sign in** and log in as Pradeep Gupta.
@@ -125,6 +131,8 @@ After completing this lab, you will be able to complete the following exercises:
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
 ### Task 1 - Access Microsoft Defender for Cloud Apps and create Conditional Access App Control
+
+In this task, you will access Microsoft Defender for Cloud Apps to create a Conditional Access App Control policy, configuring it to monitor Microsoft Forms access and setting up alerts for email notifications.
 
 1. Open a new tab and browse to the [https://security.microsoft.com](https://security.microsoft.com).
 
@@ -158,6 +166,8 @@ Registering your application establishes a trust relationship between your app a
 
 ### Task 2 - Log in as Pradeep to Forms to trigger activity
 
+In this task, you will log in to Microsoft Forms as Pradeep Gupta to trigger activity, ensuring the account access is monitored.
+
 1. Launch a new InPrivate browsing window and browse to [https://forms.microsoft.com](https://forms.microsoft.com).
 
 1. Select **Sign in** and log in as Pradeep Gupta.
@@ -179,6 +189,8 @@ Registering your application establishes a trust relationship between your app a
 
 ### Task 3 - Review the Activity in Defender for Cloud Apps
 
+In this task, you will review activity in Defender for Cloud Apps by accessing the activity log, filtering for Microsoft Forms, and checking sign-on records.
+
 1. Return to the browser running Microsoft Defender.
 
 2. Refresh the browser to ensure the most recent data is downloaded.
@@ -191,9 +203,10 @@ Registering your application establishes a trust relationship between your app a
 
    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/msforms2.png)
 
-   >**Note:** Please logout and login for the logs to appear.
+   >**Note:** Please log out and log back in for the logs to appear. It may take 1-2 hours for the logs to generate, so it's possible they might not be visible within the duration of the lab session.
 
 ### Review
+
 In this lab, you have completed the following exercises:
 - Created and tested the Conditional Access App Control policy
 - Setup alerts in Microsoft Defender for Cloud Apps
