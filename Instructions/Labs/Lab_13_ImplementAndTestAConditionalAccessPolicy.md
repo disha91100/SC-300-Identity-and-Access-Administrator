@@ -26,6 +26,8 @@ In this exercise, you will learn to create a conditional access policy in Micros
 
 ### Task 1: Confirm that the user has access to Sway
 
+In this task, you will try to access Microsoft Sway website.
+
 1. Launch a new **InPrivate** browser window.
 
 2. Connect to [https://sway.cloud.microsoft/](https://sway.cloud.microsoft/) 
