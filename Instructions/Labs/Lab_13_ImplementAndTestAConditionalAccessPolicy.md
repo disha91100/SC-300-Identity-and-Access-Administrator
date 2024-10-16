@@ -59,7 +59,7 @@ In this exercise, you will learn to create a conditional access policy in Micros
 
 4. On the Security page, in the left navigation, select **Conditional access(3)**.
    
-   ![image](https://github.com/user-attachments/assets/sc300-1.png)
+    ![](./media/sc300-1.png)
 
 5. On the **Overview** page, click **+ Create new policy**.
 
