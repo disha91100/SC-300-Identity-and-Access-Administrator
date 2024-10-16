@@ -26,7 +26,7 @@ After completing this lab, you will be able to:
 
 4. Select <inject key="AzureAdUserEmail"></inject> 
 
-5. From the **Users** page, in the left navigation under **Manage** select **Assigned Roles**
+5. From the **Users** page, in the left navigation under **Manage** select **Assigned Roles**.
 
    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/assigned-roles.png)
 
@@ -46,29 +46,31 @@ After completing this lab, you will be able to:
 
 4. In the left navigation, under **Protection** select **Identity protection**.
 
-5. In the Identity protection page, in the left navigation, select **User risk policy**.
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/image.png)
 
-    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/Protection2.png)
+5. In the Identity protection, in the left navigation, select **User risk policy**.
 
-7. Under **Assignments**, select **All users** and review the available options.
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/Screenshot_leftNav.png)
 
-8. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
+6. Under **Assignments**, select **All users** and review the available options.
 
-9. Additionally, you can choose to exclude users from the policy.
+7. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
 
-10. Under **User risk**, select **Low and above**.
+8. Additionally, you can choose to exclude users from the policy.
 
-11. In the User risk pane, select **High** and then select **Done**.
+9. Under **User risk**, select **Low and above**.
 
-12. Under **Controls** > **Access**, select **Block access**.
+10. In the User risk pane, select **High** and then select **Done**.
 
-13. In the Access pane, review the available options.
+11. Under **Controls** > **Access**, select **Block access**.
+
+12. In the Access pane, review the available options.
 
     **Tip** - Microsoft's recommendation is to Allow access and Require password change.
 
-14. Select the **Require password change** check box and then select **Done**.
+13. Select the **Require password change** check box and then select **Done**.
 
-15. Under **Policy enforcement**, toggle to  **Enabled** and then select **Save**.
+14. Under **Policy enforcement**, toggle to  **Enabled** and then select **Save**.
 
 #### Task 2 - Enable Sign-in risk policy
 
