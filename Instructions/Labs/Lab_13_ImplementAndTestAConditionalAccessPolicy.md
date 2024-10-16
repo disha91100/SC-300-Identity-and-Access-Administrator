@@ -160,52 +160,34 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 ### Task 1: Use What if to test conditional access policies
 
-1. Connect to https://entra.microsoft.com/.
-
-2. When prompted, log in with the following credentials which are also provided in the Environment details page:
-
-    | Setting | Value |
-    | :--- | :--- |
-    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
-    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
-
-
-3. Open the portal menu and then select Microsoft Entra ID.
-   
-4. On the menu, under **Identity(1)**, select **Protection(2)**.
-
-5. On the Security page, in the left navigation, select **Conditional access(3)**.
-   
-   ![image](https://github.com/user-attachments/assets/315897f5-79b0-458e-9e12-a15f1791ac0b)
-
-
-6. In the navigation pane, select **Policies (1)** and then click on **What if (2)**.
+1. In the **Conditional Access** window in the Microsoft Entra Admin Center,in the navigation pane, select **Policies (1)** and then click on **What if (2)**.
 
     ![](./media/lab13-ms-entra-id-15.png)
 
-7. To test conditional access policy with What if, perform the following:
+2. To test conditional access policy with What if, perform the following:
     - Under **User or Workload identity**, select **No user or service principal selected (1)**.
     - **Select identity type**: User **(2)**
     - **Select**: User **(3)**
     - Click on **No user selected (4)**
 
-    ![](./media/lab13-ms-entra-id-16.png)
+     ![](./media/lab13-ms-entra-id-16.png)
 
-8. Within the Users page, choose **ODL_User <inject key="DeploymentID" enableCopy="false" /> (1)** as the user and then click on **Select (2)**
+3. Within the Users page, choose **ODL_User <inject key="DeploymentID" enableCopy="false" /> (1)** as the user and then click on **Select (2)**
 
     ![](./media/lab13-ms-entra-id-17.png)
 
-9. To select the target resource, 
+4. Under **Cloud apps, actions, or authentication context**, click on **Any Cloud App** to select the target resource, 
+    
     - Select **Cloud apps, actions, or authentication context**.
     - Select **Cloud apps (1)** from the dropdown list.
     - Ensure to select the **Select apps (2)** radio button.
     - Click on **Select (3)** which opens the Select pane.
     - In the Select pane, search for and select **Sway (4)** and then click on **Select (5)**
 
-    ![image](https://github.com/user-attachments/assets/b53a235a-d8d9-46ba-9761-2f6e39324771)
+      ![image](https://github.com/user-attachments/assets/b53a235a-d8d9-46ba-9761-2f6e39324771)
 
 
-10. Select **What if** present at the bottom of the page. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
+15. Select **What if** present at the bottom of the page. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
     ![](./media/lab13-ms-entra-id-19.png)
 
@@ -219,29 +201,11 @@ The "What if" feature in Microsoft Entra ID's conditional access policies is a p
 
 As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency.
 
-1. Connect to https://entra.microsoft.com/.
-
-2. When prompted, log in with the following credentials which are also provided in the Environment details page:
-
-    | Setting | Value |
-    | :--- | :--- |
-    | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
-    | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
-
-
-3. Open the portal menu and then select Microsoft Entra ID.
-   
-4. On the menu, under **Identity(1)**, select **Protection(2)**.
-
-5. On the Security page, in the left navigation, select **Conditional access(3)**.
-   
-   ![image](https://github.com/user-attachments/assets/315897f5-79b0-458e-9e12-a15f1791ac0b)
-
-6. On the **Overview** page, click **+ Create new policy**.
+1. In the Entra ID page,in the **Conditional Access** window,on the **Overview** page, click **+ Create new policy**.
 
     ![](./media/lab13-ms-entra-id-4.png)
 
-7. Within the new policy page, configure the following:
+2. Within the new policy page, configure the following:
     - In the **Name** box, enter **Sign in frequency (1)**.    
     - Under **Assignments**, click on **Users (2)**.
     - Within the **Include** tab, ensure to choose **Select users and groups (3)** radio button.
@@ -253,7 +217,7 @@ As part of your company's larger security configuration, you must test a conditi
    
     ![](./media/lab13-ms-entra-id-22.png)
 
-8. In order to implement sign in reauthentication frequency to a specific app for the user, execute the following configurations while creating the conditional access policy:
+3. In order to implement sign in reauthentication frequency to a specific app for the user, execute the following configurations while creating the conditional access policy:
     - Under the **Target resources** section, click on **No target resources selected (1)**.
     - Ensure to have **Cloud apps (2)** option selected from the dropdown list.
     - Within the **Include** tab, choose the **Select apps (3)** radio button.
@@ -262,7 +226,7 @@ As part of your company's larger security configuration, you must test a conditi
 
     ![image](https://github.com/user-attachments/assets/5e58ea8e-5b18-425a-b2e0-31f39351767c)
 
-9. To set control access based on session controls to enable limited experiences within specific cloud applications, perform the following:
+4. To set control access based on session controls to enable limited experiences within specific cloud applications, perform the following:
     - Under **Access controls**, select **Session (1)**.
     - In the Session pane, select the **Sign-in frequency (2)** checkbox.
     - In the value box, enter **30 (3)**.
