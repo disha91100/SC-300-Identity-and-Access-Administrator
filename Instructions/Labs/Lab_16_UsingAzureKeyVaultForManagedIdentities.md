@@ -48,7 +48,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
    - Confirm Password: **Password@..!! (6)**
    - Ensure the checkbox towards the end is checked which states that you have an eligible Windows 10/11 License.
 
-        ![](./media/new-lab16-1.png)
+        ![](./media/new-lab16-2.png)
 
         ![](./media/sc-300-lab16-2.png)
 
