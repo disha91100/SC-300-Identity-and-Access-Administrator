@@ -34,11 +34,11 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
    ![](./media/sc-300-lab16-7.png)
 
-1. From the dropdown, choose **Windows 11 Enterprise, version 21H2**. Then choose **Create**.
+1. From the dropdown, choose **Windows 11 Enterprise, version 22H2**. You will be redirected to **Create a virtual machine** tab.
 
-   ![](./media/sc-300-lab16-8.png)
+   ![](./media/new-lab16-1.png)
 
-1. In the Create a Virtual Machine page, modify the following by keeping the rest as default:
+1. In the **Create a Virtual Machine** page, modify the following by keeping the rest as default:
 
    - Resource Group: Select the existing resource group from the dropdown (1)
    - Virtual Machine Name: **VM-<inject key="DeploymentID" enableCopy="false"/> (2)**
@@ -48,7 +48,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
    - Confirm Password: **Password@..!! (6)**
    - Ensure the checkbox towards the end is checked which states that you have an eligible Windows 10/11 License.
 
-        ![](./media/sc-300-lab16-1.png)
+        ![](./media/new-lab16-1.png)
 
         ![](./media/sc-300-lab16-2.png)
 
@@ -100,9 +100,9 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 1. Select **Create**.
 
-1. Once deployement is completed click on **Go to resources**
+1. Once deployment is completed click on **Go to resources**
 
-1. On **keyvault-<inject key="DeploymentID" enableCopy="false"/>** page copy the url and paste that URL in notepad you need this values in further tasks.
+1. On **keyvault-<inject key="DeploymentID" enableCopy="false"/>** page copy the url and paste that URL in notepad you need this value in further tasks.
 
    ![](./media/lab16-6.png)
          
@@ -132,7 +132,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 1. Select **Create** to create the secret.
 
-1. Copy the secret name **secret-<inject key="DeploymentID" enableCopy="false"/>** , and paste it in the notepad you need this values in further tasks.
+1. Copy the secret name **secret-<inject key="DeploymentID" enableCopy="false"/>** , and paste it in the notepad you need this value in further tasks.
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -169,7 +169,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 1. Open the downloaded file, select **Connect**, and enter the VM credentials, that is username which is **azureuser**, and password which is **Password@..!!**, select **OK**. Select **Yes** on the certificate pop-up.
    
-1. In the virtual machine, from the **start meanu** search and select **Windows PowerShell**.  
+1. In the virtual machine, from the **Start menu** search and select **Windows PowerShell**.  
 
    ![](./media/sc-300-lab16-6.png)
    
@@ -199,7 +199,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
     
     ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/results.png)
 
-1. This secret can be used to authenticate to services that require a name and password.
+1. This secret can be used to authenticate services that require a name and password.
 
 ### Review
 In this lab, you have completed:
