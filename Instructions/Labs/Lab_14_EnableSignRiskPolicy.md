@@ -22,11 +22,11 @@ After completing this lab, you will be able to:
 
 2. Open the portal menu and then search for and select **Microsoft Entra ID**.
 
-3. On the **Microsoft Entra ID** page, under **Manage**, select **Users**.
+3. On the **Microsoft Entra ID** page, in the left navigation under **Manage**, select **Users**.
 
 4. Select <inject key="AzureAdUserEmail"></inject> 
 
-5. From the **Users** page, under **Manage** select **Assigned Roles**
+5. From the **Users** page, in the left navigation under **Manage** select **Assigned Roles**.
 
    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/assigned-roles.png)
 
@@ -42,13 +42,15 @@ After completing this lab, you will be able to:
 
 2. Open the portal menu and then search for and select **Microsoft Entra ID**.
 
-3. On menu under **Identity**, Select **Protection**.
+3. In the left navigation menu, under **Identity**, Select **Protection**.
 
 4. In the left navigation, under **Protection** select **Identity protection**.
 
-5. In the Identity protection page, in the left navigation, select **User risk policy**.
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/image.png)
 
-    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/Protection2.png)
+5. In the Identity protection, in the left navigation, select **User risk policy**.
+
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/Screenshot_leftNav.png)
 
 6. Under **Assignments**, select **All users** and review the available options.
 
