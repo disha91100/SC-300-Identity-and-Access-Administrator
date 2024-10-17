@@ -316,7 +316,7 @@ Some user accounts in your organization will not be provided all available produ
 
 10. Select **Go to M365 Admin Center** and you will be navigated to Microsoft 365 Admin Center.
 
-11. From left pane select **Licenses**  and select the available **Office 365 license**.
+11. From left pane select **Licenses**  and select the available **Office 365 E5 license**.
 
     ![](./media/l1.png)
 
