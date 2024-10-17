@@ -26,7 +26,7 @@ After completing this lab, you will be able to complete the following exercises:
   
   In this exercise, you will create  a new user account and verify their administrative privileges by testing their application access and control.
 
-## Task 1 - Add a new user
+### Task 1 - Add a new user
 
 1. In the Azure portal, search for and  select **Microsoft Entra ID**.
 
@@ -36,7 +36,7 @@ After completing this lab, you will be able to complete the following exercises:
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | User name| ChrisG|
+    | User principal name| ChrisG|
     | Display Name| Chris Green|
     
 4. Mark the **Auto-generate password** option.
@@ -45,11 +45,11 @@ After completing this lab, you will be able to complete the following exercises:
 
       >**Note:** You will have to change the password upon first login to this account
       
-      >**Note:** Copy the username Of Chris Green in order to login in the next task
+      >**Note:** Copy the userprincipalname Of Chris Green in order to login in the next task
 
 6. Click on **Review + Create** and subsequently click on **Create**. The user is now created and registered to your organization.
 
-## Task 2 - Login and try to create an app
+### Task 2 - Login and try to create an app
 
 1. Launch a new **InPrivate** browser window.
 
@@ -85,7 +85,7 @@ After completing this lab, you will be able to complete the following exercises:
 
  Using Microsoft Entra ID, you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
-## Task 1 - Assign a role to a user
+### Task 1 - Assign a role to a user
 
 1. Go back to the normal browser window where you are logged in as a Global Administrator.
 
@@ -114,7 +114,7 @@ After completing this lab, you will be able to complete the following exercises:
 
      <validation step="a2dbf6f4-a68f-47d8-b0fe-f5e0e821e10f" />
 
-## Task 2 - Check application permissions
+### Task 2 - Check application permissions
 
 1. Launch a new InPrivate browser window.
 
@@ -137,7 +137,7 @@ After completing this lab, you will be able to complete the following exercises:
 
 In this exercise, you will remove the role assignment that was assigned in the previous task.
 
-## Task 1 - Remove the application administrator from Chris Green
+### Task 1 - Remove the application administrator from Chris Green
 
 This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Entra ID.
 
@@ -161,7 +161,7 @@ This task will use an alternative method to remove the assigned role; it will us
 
 ## Exercise 4 - Bulk import of users
 
-## Task 1 - Bulk operations for creating users with a .csv file
+### Task 1 - Bulk operations for creating users with a .csv file
 
 1. In your Lab Vm  navigate to **C:\AllFiles\AllFiles.zip\SC-300-Identity-and-Access-Administrator-prod\Allfiles\Labs\Lab1** and open the **SC-300BulkUser** excel file and modify the domain names for all the users.
 
@@ -195,7 +195,7 @@ This task will use an alternative method to remove the assigned role; it will us
 
    >**Note:** Refresh the page to see the users
 
-## Task 2 - Addition of users using PowerShell
+### Task 2 - Addition of users using PowerShell
 
 1. Open PowerShell as an administrator. This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
@@ -252,7 +252,7 @@ This task will use an alternative method to remove the assigned role; it will us
 
 It may happen that an account is deleted and then needs to be recovered. You need to verify you can recover an account that has been deleted recently.
 
-## Task 1 - Remove a User
+### Task 1 - Remove a User
 
 1. Back in the Azure portal,in the search box type **Microsoft Entra ID** and launch Microsoft Entra ID.
 
@@ -290,9 +290,9 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 Some user accounts in your organization will not be provided all available products in their assigned license or will need updates or additions to their license assignment. You need to ensure you are able to update a user account's license assignment in Microsoft Entra ID.
 
-## Task 1 - Find your unlicensed user in Microsoft Entra ID
+### Task 1 - Find your unlicensed user in Microsoft Entra ID
 
-1. In the Azure portal, navigate to Microsoft Entra ID, from the left navigation pane under **Mange**, select **Users**.
+1. In the Azure portal, navigate to Microsoft Entra ID, from the left navigation pane under **Manage**, select **Users**.
 
 2. In the Users page, enter **Andre** into the search box.
 
@@ -314,17 +314,19 @@ Some user accounts in your organization will not be provided all available produ
 
 9. In the left navigation, select **Licenses**.
 
-10. Select the **+ Assignments** button. 
+10. Select **Go to M365 Admin Center** and you will be navigated to Microsoft 365 Admin Center.
 
-11. On the Update license assignments page, select the check box for  **Office 365 E5** license.
+11. From left pane select **Licenses**  and select the available **Office 365 E5 license**.
 
-    ![Screen image displaying the Update license assignments page and license options highlighted](./media/office365.png)
+    ![](./media/l1.png)
 
-12. When complete, select **Save**.
+12. Select **+ Assign Licenses**.
 
-13. Now navigate to the user profile of **Andre Lawson**  from the left navigation pane select **Licenses**.
+13. On **Assign licenses to users** page, enter the name or email address of the user to whom you want to assign the license and click on **Assign**.
 
-14. Notice that the license has been assigned.
+14. Now navigate to the user profile of **Andre Lawson**  from the left navigation pane select **Licenses**.
+
+15. Notice that the license has been assigned.
 
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/e5lic.png)
 
