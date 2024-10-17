@@ -102,9 +102,9 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
 
 1. Review the Conditions section.
 
-   - Under **Conditions** click on **0 conditions selected** then under **Locations** click on **Not Configured** and then under  **Configure** toggle  it to **Yes**  and ensure that under **Include** ,**Any location** is selected.
+   - Under **Conditions** click on **0 conditions selected** then under **Locations** click on **Not Configured** and then under  **Configure** toggle  it to **Yes**  and ensure that under **Include** ,**Any network or location** is selected.
 
-      ![Screenshot highlighting the New Policy button in the Azure portal](./media/sc-300loc.png)
+      ![Screenshot highlighting the New Policy button in the Azure portal](./media/cap-conditions.png)
 
 1. Under **Access Controls** click on  **0 controls selected** and verify **Grant access** is selected.
 
@@ -132,9 +132,9 @@ Next, let's examine how to set up Conditional Access policy rules that would enf
 1. Open a new **InPrivate** browsing window.
 1. Connect to https://www.office.com.
 1. Select the sign-in option.
-1. Enter **DeliaD@** `<<your domain address>>`.
+1. Enter Delia Dennis's username and password.
 
-    - To get the username for **Delina** follow the below steps:
+    - To get the username for **Delia** follow the below steps:
   
     - In Azure portal search and select **Microsoft Entra ID** and from left navigation pane under **Manage** section and select **Users** then choose **Delia Dennis**.
     - On the **Delia Dennis** user blade, copy the **User principal name** record in notepad.
@@ -180,7 +180,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 1. A new browser tab/window will open with a multi-factor authentication user settings dialog.
 
-1. Select **Adele Vance** with a check-mark. Select the **Enable** option under quick steps.
+1. Select **Alex Wilber** with a check-mark. Select the **Enable** option under quick steps.
 
    ![](./media/lab08-sc300-17.png)
    
@@ -190,7 +190,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 1. Select **Close**.
 
-1. Notice that Adele now has **Enabled** as her MFA status.
+1. Notice that Alex now has **Enabled** as her MFA status.
 
    ![](./media/lab08-sc300-19.png)
 
