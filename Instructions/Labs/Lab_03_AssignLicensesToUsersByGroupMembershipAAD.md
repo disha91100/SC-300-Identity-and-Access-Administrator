@@ -92,19 +92,20 @@ After completing this lab, you will be able to complete the following exercises:
 
 ### Task 3 - Assign a license to a group
 
-1. In the **All groups** list, select **sg-SC300-O365**.
+1. To assign the license please go to [https://admin.microsoft.com/Adminportal/Home?referrer=entra#/licenses](url)
 
-2. In the Marketing page, in the left navigation pane under **Manage**, select **Licenses**.
+2. In the Licenses page, select **Office 365 E3 (no Teams)**.
+  
+   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/E1T3S2.png)
 
-3. On the menu, select **+ Assignments**.
+3. On License details page, select **Groups** then **+ Assign licenses**.
 
-4. In the update license assignments page, under **Select licenses**, review the list of available licenses and then select the check box for **Office 365 E3**.
+   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/E1T3S3.png)
+ 
 
-   **Tip** - When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+4. Enter a group name as **sg-SC300-O365**, select it and then click on **Assign**.
 
-   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/e3.png)
-
-5. Select **Save**.
+   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/E1T3S4.png)
 
 ### Taks 4 - Confirm the Office 365 license
 
@@ -226,6 +227,7 @@ As your company grows, manually group management is too time consuming. Since st
 1. Try making a group with only **Guest** users:
 
    - (user.objectid -ne null) and (user.userType -eq "Guest")
+     
 
 2. Try make a group with only **Members** of the Microsoft Entra users.
 
