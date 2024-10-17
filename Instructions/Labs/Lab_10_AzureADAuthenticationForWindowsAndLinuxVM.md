@@ -93,7 +93,7 @@ In this exercise, you will learn how to access Windows Virtual Machines in Azure
     -  Click on **+ Add (2)**.
     -  Then select **Add role assignment (3)** from the dropdown to open the Add role assignment page.
 
-     ![Create iam](./media/vm-iam-1.png)
+     ![Create iam](./media/IAM.png)
 
 1. Within the **Role** tab of the **Add role assignment** page, assign the following settings:
     - **Assignment type**: Job function roles **(1)**
@@ -174,7 +174,7 @@ In this exercise, you will learn how to access Windows Virtual Machines in Azure
 
 1. Open the **Downloads** folder in file manager.
 
-1. **Make a copy** of the RDP file and add **-EntraIDD** to the end of the filename as shown in the screenshot below:
+1. **Make a copy** of the RDP file and add **-EntraID** to the end of the filename as shown in the screenshot below:
 
      ![RDP](./media/rdpfile1.png)
 

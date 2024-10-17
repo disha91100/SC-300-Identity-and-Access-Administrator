@@ -18,11 +18,11 @@ In this lab, you will complete the following tasks:
 
    ![](./media/arch-09.png)
 
-### Exercise 1 - Create a group with SSPR enabled and add users to it
+## Exercise 1 - Create a group with SSPR enabled and add users to it
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-#### Task 1 - Create a group with SSPR enabled and add users to it
+### Task 1 - Create a group with SSPR enabled and add users to it
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
@@ -63,7 +63,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
    <validation step="e11d21a6-fbc6-42b0-8271-5413eb1ee9b4" />
 
-#### Task 2 - Enable SSPR for the group
+### Task 2 - Enable SSPR for the group
 
 1. Browse back to the Microsoft Entra ID page.
 
@@ -77,11 +77,11 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
       ![](./media/lab09-sc300-6.png)
       
-   - On Default password reset policy** select **SSPRTesters** then click on **Select** 
+   - On Default password reset policy select **SSPRTesters** then click on **Select** 
 
       ![](./media/lab09-sc300-7.png)
 
-    - Under Selected group make sure SSPRTesters is selectes and click on **Save**.
+    - Under Selected group make sure SSPRTesters is selected and click on **Save**.
 
       ![](./media/lab09-sc300-8.png)
       
@@ -89,7 +89,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
     >**Note** it is important to have **phone** selected as one of the authentication methods for the rest of this lab, but you can have other options as well.
 
-#### Taks 3 - Register for SSPR with Alex
+### Taks 3 - Register for SSPR with Alex
 
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
@@ -119,7 +119,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 
 1. Close the browser. You do not need to complete the sign in process.
 
-#### Task 4 - Test SSPR
+### Task 4 - Test SSPR
 
 Now let's test whether the user can reset their password.
 
@@ -158,7 +158,7 @@ Now let's test whether the user can reset their password.
 
 12. When finished, close your browser.
 
-#### Task 5 - What happens if you try a user not in SSPRTesters group?
+### Task 5 - What happens if you try a user not in SSPRTesters group?
 
 1. As a test, open a new InPrivate browser window, and browse to [https://portal.azure.com](https://portal.azure.com).
 
@@ -174,7 +174,7 @@ Now let's test whether the user can reset their password.
 
 1. Close the InPrivate browser.
 
-### Review
+## Review
 In this lab, you have completed:
 - Added users to a group to assign SSPR
 - Enabled SSPR for the group

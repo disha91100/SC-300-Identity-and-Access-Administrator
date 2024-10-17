@@ -20,9 +20,12 @@ In this lab, you will complete the following tasks:
    ![](./media/arch16.png)
 
 ## Exercise 1 - Use Azure Key Vault to manage Virtual Machine identities
+
 Use Azure Key Vault to securely manage and rotate secrets, keys, and certificates for Virtual Machine identities in Azure, enhancing security and access control.
 
 ### Task 1 - Create a Windows Virtual Machine
+
+In this task, you will create a Windows 11 VM from the Azure Marketplace, configure essential settings like name and credentials, and enable managed identity before deploying the VM.
 
 1. Select **+ Create a resource**.
 
@@ -34,11 +37,11 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
    ![](./media/sc-300-lab16-7.png)
 
-1. From the dropdown, choose **Windows 11 Enterprise, version 21H2**. Then choose **Create**.
+1. From the dropdown, choose **Windows 11 Enterprise, version 22H2**. You will be redirected to **Create a virtual machine** tab.
 
-   ![](./media/sc-300-lab16-8.png)
+   ![](./media/new-lab16-1.png)
 
-1. In the Create a Virtual Machine page, modify the following by keeping the rest as default:
+1. In the **Create a Virtual Machine** page, modify the following by keeping the rest as default:
 
    - Resource Group: Select the existing resource group from the dropdown (1)
    - Virtual Machine Name: **VM-<inject key="DeploymentID" enableCopy="false"/> (2)**
@@ -48,7 +51,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
    - Confirm Password: **Password@..!! (6)**
    - Ensure the checkbox towards the end is checked which states that you have an eligible Windows 10/11 License.
 
-        ![](./media/sc-300-lab16-1.png)
+        ![](./media/new-lab16-2.png)
 
         ![](./media/sc-300-lab16-2.png)
 
@@ -72,6 +75,8 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
      <validation step="1935e96f-183f-447c-9218-a42a2312f43b" />
 
 ### Task 2 - Create a Key Vault
+
+In this task, you will create an Azure Key Vault by configuring the required settings, including the name and access policy, then deploy it and retrieve the Key Vault URL for future tasks.
 
 1. Select **+ Create a resource**.
 
@@ -100,9 +105,9 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 1. Select **Create**.
 
-1. Once deployement is completed click on **Go to resources**
+1. Once deployment is completed click on **Go to resources**
 
-1. On **keyvault-<inject key="DeploymentID" enableCopy="false"/>** page copy the url and paste that URL in notepad you need this values in further tasks.
+1. On **keyvault-<inject key="DeploymentID" enableCopy="false"/>** page copy the url and paste that URL in notepad you need this value in further tasks.
 
    ![](./media/lab16-6.png)
          
@@ -115,9 +120,11 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 ### Task 3 - Create a secret
 
+In this task, you will create a secret in your Key Vault by specifying the name and value, then copy the secret name for use in future tasks.
+
 1. Navigate to your newly created Key Vault.
 
-1. From the left-hand navigation pane, under **Objects**, select **Secrets** and click on  **+ Generate/Import**.
+1. From the left-hand navigation pane, under **Objects**, select **Secrets** and click on **+ Generate/Import**.
 
    ![](./media/lab16-7.png)
    
@@ -132,7 +139,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 1. Select **Create** to create the secret.
 
-1. Copy the secret name **secret-<inject key="DeploymentID" enableCopy="false"/>** , and paste it in the notepad you need this values in further tasks.
+1. Copy the secret name **secret-<inject key="DeploymentID" enableCopy="false"/>** , and paste it in the notepad you need this value in further tasks.
 
      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -142,6 +149,8 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
      <validation step="b3569c98-64c4-4f7e-a19b-463cfc0b4d36" />
 
 ### Task 4 - Grant access to Key Vault
+
+In this task, you will grant access to your Key Vault by creating an access policy, assigning secret management permissions, and selecting the appropriate VM as the principal.
 
 1. On the **keyvault-<inject key="DeploymentID" enableCopy="false"/> | Secrets**, from the left-hand navigation pane, select **Access policies** and click on **+ Create**.
    ![](./media/lab16-8.png)
@@ -159,6 +168,8 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 ### Task 5 - Access data with Key Vault secret with PowerShell
 
+In this task, you will use PowerShell within your virtual machine to access the secret stored in Azure Key Vault by obtaining an access token and invoking a web request to retrieve the secret.
+
 1. In **Search, resources, services and docs** search and select **Virtual machines**.
 
 1. Select the virtual machine that you created in Task-1, that is **VM-<inject key="DeploymentID" enableCopy="false"/>**.
@@ -169,7 +180,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
 
 1. Open the downloaded file, select **Connect**, and enter the VM credentials, that is username which is **azureuser**, and password which is **Password@..!!**, select **OK**. Select **Yes** on the certificate pop-up.
    
-1. In the virtual machine, from the **start meanu** search and select **Windows PowerShell**.  
+1. In the virtual machine, from the **Start menu** search and select **Windows PowerShell**.  
 
    ![](./media/sc-300-lab16-6.png)
    
@@ -199,7 +210,7 @@ Use Azure Key Vault to securely manage and rotate secrets, keys, and certificate
     
     ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/results.png)
 
-1. This secret can be used to authenticate to services that require a name and password.
+1. This secret can be used to authenticate services that require a name and password.
 
 ### Review
 In this lab, you have completed:
