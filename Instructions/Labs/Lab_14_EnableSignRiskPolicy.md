@@ -36,6 +36,8 @@ After completing this lab, you will be able to:
 
 ### Exercise 1 - Enable User risk policy
 
+In this exercise, you'll configure a user risk policy in Microsoft Entra ID to block access for high-risk users and enforce password changes. You'll also enable a sign-in risk policy to require multi-factor authentication for risky sign-ins.
+
 #### Task 1 - Configure the policy
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account.
