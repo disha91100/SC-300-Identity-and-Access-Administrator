@@ -27,13 +27,9 @@ Configuring an Enterprise App involves setting up and managing the identity and 
    - **Email/Username:**<inject key="AzureAdUserEmail"></inject>**
    - **Password:**<inject key="AzureAdUserPassword"></inject>**
 
-2. On the Identity menu, under **Applications**, select **Enterprise applications**.
+2. On the Identity menu, under **Applications (1)**, select **Enterprise applications (2)** and click on **+ New application (3)**.
 
-    ![](./media/lab20-1.2.png)
-
-3. In the Enterprise applications pane, select **+ New application**.
-
-    ![](./media/enterprise-apps-2.png)
+    ![](./media/Ent-app.png)
 
 4. Perform the following steps within Browse Microsoft Entra Gallery page to create a new Enterprise Application:
     - In the **Search application** box, enter **GitHub (1)**.

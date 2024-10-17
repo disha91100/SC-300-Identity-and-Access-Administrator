@@ -236,14 +236,7 @@ Users can review and see the terms of use that they have accepted by using the f
 
 1. Open a new In-private browser and navigate to [https://myapps.microsoft.com](https://myapps.microsoft.com/).
 
-2. Sign in using your ODL Administrator user account to sign in:
-
-   | Setting | Value |
-   | :--- | :--- |
-   | Username | **<inject key="AzureAdUserEmail" enableCopy="true" />** |
-   | Password | **<inject key="AzureAdUserPassword" enableCopy="true" />** |
-
-   >**Note:** If you are already signed in as Alex, kindly sign out and log in with the above credentials.
+2. Sign in using your Alex Wilber's user account.
 
 3. Select the user profile photo and then select **View account**. On the Overview page, select **VIEW SETTINGS AND PRIVACY**.
 

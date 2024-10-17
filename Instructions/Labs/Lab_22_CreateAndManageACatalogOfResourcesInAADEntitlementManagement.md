@@ -24,7 +24,7 @@ In this lab, you will complete the following tasks:
 ### Exercise 1 - Building out resources in Entitlement Management
 Building out resources in Entitlement Management involves defining and structuring the catalog of resources and services available to users, streamlining access management within an organization.
 
-#### Task 1 - Create a catalog
+### Task 1 - Create a catalog
 
 1. In **Search, resources, services and docs**, search and select for **Microsoft Entra ID**.
 
@@ -51,7 +51,7 @@ Building out resources in Entitlement Management involves defining and structuri
 
 1. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
-#### Task 2 - Create a groups
+### Task 2 - Create a groups
 
 1. In **Search, resources, services and docs**, search and select for **Microsoft Entra ID**.
 
@@ -110,7 +110,7 @@ Building out resources in Entitlement Management involves defining and structuri
 
      <validation step="37c693fb-cab4-469c-855b-5e0afd7108df" />
 
-#### Task 3 - Add resources to a catalog
+### Task 3 - Add resources to a catalog
 
 To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Azure AD security groups. The applications can be Azure AD enterprise applications, including both SaaS applications and your own applications federated to Azure AD. The sites can be SharePoint Online sites or SharePoint Online site collections.
 
@@ -135,7 +135,7 @@ To include resources in an access package, the resources must exist in a catalog
      ![](./media/lab22-7.png)
      >**Note**: For this exercise, it is okay to choose any resource you may have available.
 
-#### Task 4 - Add additional catalog owners
+### Task 4 - Add additional catalog owners
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
@@ -146,7 +146,7 @@ The user that created a catalog becomes the first catalog owner. To delegate man
 
 5. Review the newly added role in the Roles and administrators list.
 
-#### Task 5 - Edit a catalog
+### Task 5 - Edit a catalog
 
 You can edit the name and description for a catalog. Users see this information in an access package's details.
 
@@ -158,7 +158,7 @@ You can edit the name and description for a catalog. Users see this information 
 
     ![](./media/lab22-10.png)
 
-#### Task 6 - Create Access reviews for guest users
+### Task 6 - Create Access reviews for guest users
 
 1. Navigate back to the **Identity Governance**.
 

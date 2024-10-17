@@ -17,7 +17,7 @@ After completing this lab, you will be able to complete the following tasks:
 
 ## Estimated time: 30 minutes
 
-#### Task 1 - App registration
+### Task 1 - App registration
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
@@ -43,7 +43,7 @@ Registering your application establishes a trust relationship between your app a
      <validation step="8bc7c83f-773b-44c7-ba7a-567f0d85f110" />
 
 
-#### Task 2 - Grant admin consent in App registrations
+### Task 2 - Grant admin consent in App registrations
 
    >**Warning** - Granting tenant-wide admin consent to an application will grant the app and the app's publisher access to your organization's data. Carefully review the permissions the application is requesting before granting consent.
 
@@ -65,7 +65,7 @@ The Global Administrator role is required in order to provide admin consent for 
 
    >**Warning** - Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
-#### Task 3 - Grant admin consent in Enterprise apps
+### Task 3 - Grant admin consent in Enterprise apps
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
